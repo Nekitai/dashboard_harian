@@ -37,7 +37,7 @@ export default function Dashboard() {
     };
 
     // Tembak pake fetch dan requestOptions
-    fetch("/api/data", requestOptions)
+    fetch("/api/laporan", requestOptions)
       .then((res) => {
         if (!res.ok) throw new Error("Akses ditolak");
         return res.text(); // Tetap pakai text() kayak aslinya!
